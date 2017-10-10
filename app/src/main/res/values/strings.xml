@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FireApp</string>
+    <string name="md_sample_data">### MarkdownView Live Preview \n * * * \n  Edit the text to see it updated instantly.</string>
+</resources>

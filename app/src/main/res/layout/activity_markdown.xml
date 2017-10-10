@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_markdown"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.himanshusingh.fireapp.MarkdownActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/markdownText"
+            android:layout_width="fill_parent"
+            android:layout_height="205dp"
+            android:background="#e2e2e2"
+            android:inputType="textMultiLine" >
+
+            <requestFocus />
+        </EditText>
+
+        <us.feras.mdv.MarkdownView
+            android:id="@+id/markdownView"
+            android:layout_width="fill_parent"
+            android:layout_height="138dp"
+            android:layout_weight="0.15" />
+
+        <Button
+            android:text="TextViewer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewer" />
+
+    </LinearLayout>
+</RelativeLayout>

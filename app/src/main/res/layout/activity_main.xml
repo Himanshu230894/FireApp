@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="30dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="30dp"
+    tools:context="com.example.himanshusingh.fireapp.MainActivity">
+
+    <Button
+        android:text="Add Value to Firebase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SendData"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="129dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:id="@+id/keyValue"
+        android:layout_alignParentEnd="true"
+        android:hint="add key" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/keyValue"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp"
+        android:id="@+id/valueField"
+        android:layout_width="match_parent"
+        android:hint="add value" />
+
+    <TextView
+        android:text="Value"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/SendData"
+        android:layout_marginTop="62dp"
+        android:id="@+id/textValue"
+        android:gravity="center"
+        android:textSize="30dp" />
+
+    <Button
+        android:text="Take me to page 2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textValue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:id="@+id/page2"
+        android:onClick="Boom" />
+
+    <Button
+        android:text="Login page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/page2"
+        android:id="@+id/login"
+        android:layout_alignParentStart="true"
+        android:onClick="loginpage" />
+</RelativeLayout>
